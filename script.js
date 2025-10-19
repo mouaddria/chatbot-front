@@ -740,7 +740,7 @@ inputDiv.innerHTML = `
     if (base64Image) {
       // Appel à /api/analyze-car avec image + condition via FormData
       const condition = prompt.includes("NEUVE") ? "new" : "used";
-      endpoint = 'https://your-backend.up.railway.app/api/analyze-car';
+      endpoint = 'https://chatbot-back-production-a419.up.railway.app/api/analyze-car';
 
       // On construit un FormData pour envoyer l'image comme fichier
       const formData = new FormData();
@@ -765,7 +765,7 @@ inputDiv.innerHTML = `
       // Ne pas définir 'Content-Type' ici, le navigateur le fait automatiquement avec multipart/form-data
     } else {
       // Appel à /api/chat pour message texte seul
-      endpoint = 'https://your-backend.up.railway.app/api/chat';
+      endpoint = 'https://chatbot-back-production-a419.up.railway.app/api/chat';
       payload = JSON.stringify({ prompt });
       headers = { 'Content-Type': 'application/json' };
     }
@@ -1020,4 +1020,5 @@ inputDiv.innerHTML = `
       }
     });
   }
+
 })();
