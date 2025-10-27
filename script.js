@@ -882,7 +882,7 @@ inputDiv.innerHTML = `
     const formattedMsg = formatAIResponse(msg);
     div.innerHTML = `
       <div class="chat-message-received">
-        <img src="img/logo-chat.png" alt="EQDOM">
+        <img src="logo-chat.png" alt="EQDOM">
         <div class="chat-message-content">${formattedMsg}</div>
       </div>
     `;
@@ -1022,5 +1022,6 @@ inputDiv.innerHTML = `
   }
 
 })();
+
 
 
