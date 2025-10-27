@@ -706,7 +706,7 @@ inputDiv.innerHTML = `
       thinkingElement.className = 'chat-message-div';
       thinkingElement.innerHTML = `
         <div class="chat-message-received">
-          <img src="img/logo-chat.png" alt="EQDOM">
+          <img src="logo-chat.png" alt="EQDOM">
           <div class="chat-message-content">
             <div class="thinking-dots"><span></span><span></span><span></span></div>
           </div>
@@ -1022,4 +1022,5 @@ inputDiv.innerHTML = `
   }
 
 })();
+
 
